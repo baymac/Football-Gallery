@@ -45,10 +45,6 @@ html, body {
   max-width: 120px;
 }
 
-.thumbnail-item + .thumbnail-item {
-  margin-top: 10px;
-}
-
 .thumbnail-list {
   order: 2;
   flex: 0 1 auto;
@@ -61,13 +57,15 @@ html, body {
 }
 
 .detail-image-frame {
-text-align: center;
+  text-align: center;
+  position: relative;
 }
 
 .thumbnail-title {
   background: rgb(96, 125, 139);
   color: rgb(202, 238, 255);
   display: block;
+  text-align: center;
   font-size: 18px;
   margin: 0;
   padding: 4px 10px;
@@ -82,4 +80,9 @@ text-align: center;
 
 .detail-image {
   width: 90%;
+}
+
+.detail-image-title {
+  color: white;
+  font-size: 40px;
 }
