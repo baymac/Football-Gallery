@@ -10,9 +10,6 @@ a {
   text-decoration: none;
 }
 
-.main-header {
-  flex: 0 1 auto;
-}
 
 html, body {
   height: 100%;
@@ -25,11 +22,6 @@ html, body {
   text-transform: uppercase;
 }
 
-.main-content {
-  display: flex;
-  flex: 1 1 auto;
-  flex-direction: column;
-}
 
 .thumbnail-image {
   display: block;
@@ -48,10 +40,7 @@ html, body {
 }
 
 .thumbnail-list {
-  display: flex;
-  flex: 0 1 auto;
   list-style: none;
-  order: 2;
   overflow-x: auto;
   padding: 0;
   white-space: nowrap;
@@ -68,8 +57,4 @@ html, body {
 
 .detail-image {
   width: 90%;
-}
-
-.detail-image-container {
-  flex: 1 1 auto;
 }
