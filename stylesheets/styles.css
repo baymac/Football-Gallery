@@ -10,6 +10,15 @@ a {
   text-decoration: none;
 }
 
+.main-header {
+  flex: 0 1 auto;
+}
+
+.main-content {
+  flex: 1 1 auto;
+  display: flex;
+  flex-direction: column;
+}
 
 html, body {
   height: 100%;
@@ -32,7 +41,8 @@ html, body {
   border: 1px solid rgb(100%, 100%, 100%);
   border: 1px solid rgba(100%, 100%, 100%, 0.8);
   display: inline-block;
-  width: 120px;
+  min-width: 120px;
+  max-width: 120px;
 }
 
 .thumbnail-item + .thumbnail-item {
@@ -40,10 +50,18 @@ html, body {
 }
 
 .thumbnail-list {
+  order: 2;
+  flex: 0 1 auto;
+  display: flex;
   list-style: none;
   overflow-x: auto;
   padding: 0;
+  justify-content: space-between;
   white-space: nowrap;
+}
+
+.detail-image-frame {
+text-align: center;
 }
 
 .thumbnail-title {
@@ -53,6 +71,13 @@ html, body {
   font-size: 18px;
   margin: 0;
   padding: 4px 10px;
+}
+
+.detail-image-container {
+  flex: 1 1 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .detail-image {
