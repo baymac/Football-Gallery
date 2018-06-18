@@ -71,11 +71,11 @@ function addKeyPressHandler() {
   });
 }
 
-function initializeEvents() {
+(function (thumbnails) {
   'use strict';
   var thumbnails = getThumbnailsArray();
   thumbnails.forEach(addThumbClickHandler);
   addKeyPressHandler();
-}
+})(getThumbnailsArray());
 
-initializeEvents();
+// var thumbnails = getThumbnailsArray();
